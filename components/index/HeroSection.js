@@ -13,7 +13,7 @@ const HeroSection = () => {
       {isVideo ? (
         <div className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-screen z-30 p-4 bg-black bg-opacity-90">
           <ReactPlayer
-            url="https://vimeo.com/449573751"
+            url="https://www.youtube.com/watch?v=SYTB9jmY9oM"
             controls="true"
             wrapper="div"
             className="max-w-full"
@@ -48,9 +48,8 @@ const HeroSection = () => {
             </h1>
           </div>
           <p className="text-center lg:text-left text-sm">
-            We utillise cutting edge solutions to seamlessly deliver
-            multi-channel campaigns and keep pace in an ever-changing digital
-            world.
+            We utillise cutting edge AI, AR, Bitcoin, NFT, XR solutions to seamlessly deliver
+            multi-channel blockchain Arvrtising campaigns.
           </p>
           <div className="flex flex-col xl:flex-row space-y-0 w-full lg:items-start items-center gap-4">
             <Link scroll={false} href="/team">
