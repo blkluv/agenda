@@ -1,6 +1,8 @@
 module.exports = {
   plugins: {
     tailwindcss: {},
-    autoprefixer: {},
+    autoprefixer: {
+      grid: true, // Enable proper grid support
+    },
   },
 }
