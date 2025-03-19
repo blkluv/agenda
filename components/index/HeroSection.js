@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <>
       {isVideo ? (
-        <div className="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-screen z-30 p-4 bg-black bg-opacity-90">
+        <div className="fixed top-0 left-0 z-30 flex flex-col items-center justify-center w-full h-screen p-4 bg-black bg-opacity-90">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=SYTB9jmY9oM"
             controls="true"
@@ -19,7 +19,7 @@ const HeroSection = () => {
             className="max-w-full"
           />
           <button
-            className="btn border-white text-white hover:bg-white hover:text-black text-xl z-50 sm:mt-8"
+            className="z-50 text-xl text-white border-white btn hover:bg-white hover:text-black sm:mt-8"
             onClick={() => {
               dispatch(setVideoClose());
             }}
@@ -33,32 +33,32 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-2 lg:mt-8 mt-2 mb-[105px] lg:mb-[0px] gap-6 lg:min-h-[700px] min-h-[70vh] items-center">
         <div className="col-span-2 lg:col-span-1 flex flex-col gap-6 my-3 justify-center items-center lg:items-start lg:pr-[20%]">
           <div className="relative">
-            <h1 className=" font-bold text-4xl lg:5xl lg:text-6xl text-primary text-center lg:text-left">
-              <div className="inline-block relative">
-                Provide
+            <h1 className="text-4xl font-bold text-center  lg:5xl lg:text-6xl text-primary lg:text-left">
+              <div className="relative inline-block">
+                
                 <div className="absolute h-[60px] w-[60px] rounded-full bg-primary bg-opacity-10 left-[-30px] top-[-20px]"></div>
               </div>{" "}
-              Solutions
+              
               <br />
-              With{" "}
-              <div className="inline-block relative">
-                Creativity
+              WEED{" "}
+              <div className="relative inline-block">
+                W3W
                 <div className="absolute h-[20px] w-[100%] rounded-full bg-[#DFFF9A]  bottom-[-3px] z-[-1]"></div>
               </div>
             </h1>
           </div>
-          <p className="text-center lg:text-left text-sm">
+          <p className="text-sm text-center lg:text-left">
             We utillise cutting edge AI, AR, Bitcoin, NFT, XR solutions to seamlessly deliver
             multi-channel blockchain Arvrtising campaigns.
           </p>
-          <div className="flex flex-col xl:flex-row space-y-0 w-full lg:items-start items-center gap-4">
+          <div className="flex flex-col items-center w-full gap-4 space-y-0 xl:flex-row lg:items-start">
             <Link scroll={false} href="/team">
-              <a className="btn text-neutral bg-primary w-full xl:w-1/2 text-center py-2">
+              <a className="w-full py-2 text-center btn text-neutral bg-primary xl:w-1/2">
                 About Us
               </a>
             </Link>
             <button
-              className="btn flex justify-center items-center w-full xl:w-1/2 py-2"
+              className="flex items-center justify-center w-full py-2 btn xl:w-1/2"
               onClick={() => {
                 dispatch(setVideoOpen());
               }}
@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative h-[35vh] lg:h-[45vh] col-span-2 lg:col-span-1">
-          <div className="relative h-full w-full overflow-hidden rounded-2xl">
+          <div className="relative w-full h-full overflow-hidden rounded-2xl">
             <Image
               alt=""
               src="/main_grid_bg.jpg"
